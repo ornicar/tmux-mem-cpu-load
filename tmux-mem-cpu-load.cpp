@@ -63,7 +63,7 @@ float cpu_percentage( unsigned int cpu_usage_delay )
   diff_nice   = next_nice - current_nice;
   diff_idle   = next_idle - current_idle;
 
-  return static_cast<float>(diff_user + diff_system + diff_nice)/static_cast<float>(diff_user + diff_system + diff_nice + diff_idle)*100.0;
+  return static_cast<float>(diff_user + diff_system + diff_nice)/static_cast<float>(diff_user + diff_system + diff_nice + diff_idle)*400.0;
 }
 
 string cpu_string( unsigned int cpu_usage_delay, unsigned int graph_lines )
