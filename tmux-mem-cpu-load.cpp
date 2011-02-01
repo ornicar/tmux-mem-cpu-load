@@ -139,7 +139,7 @@ string load_string()
   getline( loadavg_file, load_line );
   loadavg_file.close();
 
-  return load_line.substr( 0, 14 );
+  return load_line.substr( 0, 4 );
 }
 
 int main(int argc, char** argv)
